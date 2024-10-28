@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp();
+  runApp(myApp);
 }
+
+const myApp = MaterialApp(
+  home: Text('Hello World!'),
+);
+
+
 // import 'package:flutter/material.dart';
 
 // void main() {
