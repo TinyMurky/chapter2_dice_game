@@ -1,12 +1,26 @@
 import 'package:flutter/material.dart';
+import 'package:chapter2_dice_game/gradient_container.dart';
 
 void main() {
   runApp(myApp);
 }
 
-const myApp = MaterialApp(
-  home: Text('Hello World!'),
+var myApp = MaterialApp(
+  home: Scaffold(
+    appBar: AppBar(
+      title: const Text(
+        'Dice Game',
+        style: TextStyle(color: Colors.white70),
+      ),
+      backgroundColor: const Color.fromARGB(191, 84, 201, 255),
+      shadowColor: Colors.black45,
+    ),
+    body: const GradientContainer(
+        [Color.fromARGB(255, 151, 210, 238), Color.fromARGB(255, 8, 40, 121)]),
+    backgroundColor: const Color.fromARGB(255, 217, 50, 106),
+  ),
 );
+
 
 
 // import 'package:flutter/material.dart';
